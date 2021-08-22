@@ -26,6 +26,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 1.5;
+  font-style: italic;
 }
 img {
   width: 300px;
@@ -114,13 +115,13 @@ header {
 
 /* Health
 ------------------------------------*/
-.health {
-  background-image: url(../images/covid19-update.png);
+.education {
+  background-image: url(../images/pattern.jpg);
   background-size: cover;
   background-position: top right;
   padding-bottom: 100px;
 }
-.health p {
+.education p {
   width: 60%;
 }
 
