@@ -1,0 +1,32 @@
+# A sameple template for a Docker yaml File. 
+
+name: CI
+
+# to add comments use #
+# trigger to consider
+
+On:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest 
+    name: Build and Test
+    steps: 
+      - uses: actions/checkout@v2
+        name: Check out repository 
+      - uses: actions/setup-node@v1 #install node. 
+        name: Set up node.js
+        with: 
+          node-version: 12 #node version 12
+      - run: |
+          npm ci #install the required packages in your project
+          npm run build #build the project 
+          npm test #run test cases
+        
+      
+      name: Build and Test
+
