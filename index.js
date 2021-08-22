@@ -67,12 +67,12 @@ app.get('/',
   (req, res) => res.sendFile('html/index.html', {root: __dirname})
 );
 
-app.get('/private',
+app.get('/health',
   connectEnsureLogin.ensureLoggedIn(),
-  (req, res) => res.sendFile('html/private.html', {root: __dirname})
+  (req, res) => res.sendFile('html/health.html', {root: __dirname})
 );
 
-app.get('/user',
+app.get('/Sign_UP',
   connectEnsureLogin.ensureLoggedIn(),
   (req, res) => res.send({user: req.user})
 );
