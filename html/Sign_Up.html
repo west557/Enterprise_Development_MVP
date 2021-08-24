@@ -7,9 +7,50 @@
     <title>Create Account</title>
     <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/Sign_Up.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-    <form action="action_page.php" style="border:1px solid #ccc">
+
+  <div class="div container">
+    <div class="div header">
+      <h2>Registration Form</h2>
+      <div><i class="glyphicon glyphicon-cloud" style="height: 200px;"></i></div>
+      <form action="backend.php" class="main">
+        <div class="form">
+          <label1 for="">Username</label1>
+          <input type="text" placeholder="Enter your Username" id="username" autocomplete="off">
+          <i class="fas"></i>
+          <i class="fas"></i>
+          <small class="message">error message</small>
+        </div>
+        <div class="form">
+          <label1 for="">Email</label1>
+          <input type="email" placeholder="Enter your valid Email" id="Email" autocomplete="off">
+          <i class="fas"></i>
+          <i class="fas"></i>
+          <small class="message">error message</small>
+        </div>
+        <div class="form">
+          <label1 for="">Password</label1>
+          <input type="text" placeholder="Enter your Password" id="password1" autocomplete="off">
+          <i class="fas"></i>
+          <i class="fas"></i>
+          <small class="message">error message</small>
+        </div>
+        <div class="form">
+          <label1 for="">Password Check</label1>
+          <input type="text" placeholder="Please re-enter your password" id="username" autocomplete="off">
+          <i class="fas"></i>
+          <i class="fas"></i>
+          <small class="message">error message</small>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+    <!-- <form action="action_page.php" style="border:1px solid #ccc">
         <div class="container">
           <h1>Sign Up</h1>
           <p>Please fill in this form to create an account.</p>
@@ -35,6 +76,6 @@
             <button type="submit" class="signupbtn">Sign Up</button>
           </div>
         </div>
-      </form>
+      </form> -->
 </body>
 </html>
